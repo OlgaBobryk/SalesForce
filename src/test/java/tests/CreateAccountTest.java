@@ -1,6 +1,5 @@
 package tests;
 
-
 import models.NewAccountModel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,9 +20,8 @@ public class CreateAccountTest extends BaseTest {
                 .openAccountsPage()
                 .openNewAccountModal()
                 .fillInAccountForm(accountModel);
-      NewAccountNamePage accountName=new NewAccountNamePage(driver);
-      accountName.findAccountName();
-        Assert.assertEquals(accountModel.getAccountName(),accountName.findAccountName(),"Accountnames are different");
+        NewAccountNamePage accountName = new NewAccountNamePage(driver);
+       Assert.assertEquals(accountModel.getAccountName(), accountName.findAccountName(), "Accountnames are different");
 
     }
 }

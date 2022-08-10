@@ -20,15 +20,6 @@ public class LoginPage extends BasePage {
         driver.get(Urls.SALES_FORCE_LOGIN);
         driver.findElement(USERNAME_INPUT).sendKeys(Credentials.USERNAME);
         driver.findElement(PASSWORD_INPUT).sendKeys(Credentials.PASSWORD);
-        //  TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-        // byte[] sourceFile = takesScreenshot.getScreenshotAs(OutputType.BYTES);
-        // try {
-        //     Files.write(Paths.get("src/test/resources/screenshot.png"), sourceFile);
-
-        // }
-        // catch (IOException e){
-        //     e.printStackTrace();
-        // }
         driver.findElement(LOGIN_BUTTON).click();
 
     }
