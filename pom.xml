@@ -14,6 +14,7 @@
         <javafaker.version>1.0.2</javafaker.version>
         <projectlombok.version>1.18.24</projectlombok.version>
         <webdrivermanager.version>3.8.1</webdrivermanager.version>
+        <logo.version>1.2.17</logo.version>
     </properties>
 
     <dependencies>
@@ -44,6 +45,13 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${logo.version}</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>
