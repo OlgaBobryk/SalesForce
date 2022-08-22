@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -14,6 +15,7 @@ public class NewAccountNamePage extends BasePage {
         super(driver);
     }
 
+    @Step("Expected Account Name")
     public String findAccountName() {
         LOGGER.debug(String.format("Check if AccountName %s is displayed", NEW_ACCOUNT_NAME));
         return driver.findElement(NEW_ACCOUNT_NAME).getText();
